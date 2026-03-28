@@ -10,9 +10,10 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
                 <Beaker className="w-6 h-6" />
               </div>
-              <span className="font-display font-bold text-2xl text-white tracking-tight">
-                Laboratório Avançado
-              </span>
+              <div>
+                <span className="font-display font-bold text-2xl text-white tracking-tight block">LabOPTIMA</span>
+                <span className="text-slate-400 text-xs leading-snug block mt-1">Laboratório de Otimização, Produção e Tecnologias<br/>Inteligentes Multidisciplinares e Analíticas</span>
+              </div>
             </div>
             <p className="text-slate-400 text-lg max-w-md leading-relaxed">
               Avançando as fronteiras do conhecimento científico através de pesquisa inovadora, excelência acadêmica e impacto na sociedade.

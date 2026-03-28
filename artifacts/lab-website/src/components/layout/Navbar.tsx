@@ -45,9 +45,10 @@ export function Navbar() {
           <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
             <Beaker className="w-6 h-6" />
           </div>
-          <span className="font-display font-bold text-xl tracking-tight text-white drop-shadow-md">
-            Laboratório <span className="text-white">Avançado</span>
-          </span>
+          <div className="leading-tight">
+            <span className="font-display font-bold text-xl tracking-tight text-white drop-shadow-md block">LabOPTIMA</span>
+            <span className="text-white/70 text-xs font-normal hidden sm:block">Laboratório de Otimização, Produção e Tecnologias Inteligentes Multidisciplinares e Analíticas</span>
+          </div>
         </a>
 
         {/* Desktop Nav */}
