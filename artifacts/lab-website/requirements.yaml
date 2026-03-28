@@ -1,0 +1,25 @@
+packages:
+  "framer-motion": "For smooth scroll reveals and premium page transitions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation in forms"
+  "clsx": "For merging conditional Tailwind classes"
+  "tailwind-merge": "For merging conflicting Tailwind classes"
+
+images:
+  - path: "artifacts/lab-website/public/images/logo.png"
+    description: "Minimalist geometric scientific logo mark combining a molecule and an atom, deep academic blue on transparent background, flat vector style"
+    aspect_ratio: "1:1"
+  - path: "artifacts/lab-website/public/images/hero-bg.png"
+    description: "Abstract 3D scientific background featuring glowing DNA strands, molecules, and data particles in deep blue and teal, high end dark professional tone with depth of field"
+    aspect_ratio: "16:9"
+  - path: "artifacts/lab-website/public/images/about-lab.png"
+    description: "Modern scientific laboratory interior with clean white benches, glowing blue analytical equipment, and microscopes. Highly professional, bright, well-lit, architectural photography"
+    aspect_ratio: "16:9"
+  - path: "artifacts/lab-website/public/images/infrastructure.png"
+    description: "Macro close up of high-tech scientific equipment like a quantum computer or electron microscope, sleek brushed metal with subtle blue led lights, premium laboratory photography"
+    aspect_ratio: "16:9"
+
+notes:
+  - The application is a single-page scrolling site, so wouter is used mostly for top-level routing (Home vs 404).
+  - Internal navigation uses standard anchor links (<a href="#section">) with smooth scrolling.
+  - The contact form is fully wired with react-hook-form and zod, but simulates submission since there is no backend.

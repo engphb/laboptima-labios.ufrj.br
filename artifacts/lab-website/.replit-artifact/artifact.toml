@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Laboratório de Pesquisa Científica"
+version = "1.0.0"
+id = "artifacts/lab-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23699
+
+[services.development]
+run = "pnpm --filter @workspace/lab-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lab-website", "run", "build" ]
+publicDir = "artifacts/lab-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23699"
+BASE_PATH = "/"
