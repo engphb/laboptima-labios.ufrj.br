@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/lab-website run build",
+  "outputDirectory": "artifacts/lab-website/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
