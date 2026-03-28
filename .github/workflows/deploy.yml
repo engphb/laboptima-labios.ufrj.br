@@ -41,9 +41,10 @@ jobs:
         env:
           NODE_ENV: production
           PORT: 3000
-          # Troque pelo nome do seu repositório: /nome-do-repo/
-          # Se for um site de organização ou usuário (ex: usuario.github.io), use: /
-          BASE_PATH: /
+          BASE_PATH: /laboptima-labios-website/
+
+      - name: Copiar index.html para 404.html (SPA routing)
+        run: cp artifacts/lab-website/dist/public/index.html artifacts/lab-website/dist/public/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

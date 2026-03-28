@@ -47,7 +47,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group">
           <img
-            src="/images/logo-lab.png"
+            src={`${import.meta.env.BASE_URL}images/logo-lab.png`}
             alt="Logo LabOPTIMA | LaBioS"
             className="w-40 h-40 object-contain"
           />
