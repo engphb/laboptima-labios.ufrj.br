@@ -114,24 +114,24 @@ export const services = [
 export const news = [
   {
     id: 1,
-    title: "Laboratório recebe novo fomento da FAPESP para pesquisa em materiais quânticos",
-    date: "15 de Outubro, 2024",
-    summary: "O projeto de 4 anos visa desenvolver novos supercondutores operando em temperaturas mais elevadas, com potencial de revolucionar a transmissão de energia.",
+    title: "Laboratório recebe visita da Delegação do IMIP - Indonesia Morowali Industrial Park",
+    date: "28 de Setembro, 2025",
+    summary: "Nosso laboartório recebeu com grande honra a delegação do Indonesia Morowali Industrial Park (IMIP), que vieram conhecer de perto as nossas pesquisas e tecnologias em materiais avançados, biomateriais e soluções sustentáveis.",
     imageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=500&fit=crop", // abstract science
   },
   {
     id: 2,
-    title: "Pesquisadora do nosso grupo ganha prêmio internacional Jovem Cientista",
-    date: "28 de Setembro, 2024",
-    summary: "A Dra. Mariana Silva foi reconhecida pelo seu trabalho inovador na interface entre inteligência artificial e biologia estrutural.",
+    title: "Bolsa PIBIC",
+    date: "28 de Setembro, 2025",
+    summary: "Se você é estudante de Química e áreas afins e quer atuar em projetos, essa é a sua chance! Bolsa PIBIC disponível!.",
     imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=500&fit=crop", // scientist
   },
   {
     id: 3,
-    title: "Inauguração da nova sala limpa ISO Classe 5",
-    date: "10 de Agosto, 2024",
-    summary: "A nova infraestrutura permitirá a nanofabricação de dispositivos com extrema precisão, abrindo portas para colaborações industriais.",
-    imageUrl: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=800&h=500&fit=crop", // clean room
+    title: "Nova publicação aceita!",
+    date: "28 de Setembro, 2025",
+    summary: "O artigo aceito para publicação, liderado pelo professor Fernando Gomes, e suas alunas de doutorado do PENt Karine Velasco e Jaciara Santos, será publicado no Journal of Drug Delivery Science and Technology (Fator de Impacto: 4.5 | CiteScore: 8.0), referência mundial em tecnologia farmacêutica e biomateriais aplicados à saúde!.",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8OMUumCqTFevycKm2k0AlaS-67a6TOy0JA&s?w=800&h=500&fit=crop", // clean room
   },
 ];
 
