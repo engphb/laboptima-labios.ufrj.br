@@ -136,7 +136,7 @@ export const news = [
     id: 3,
     title: "Nova publicação aceita!",
     date: "28 de Setembro, 2025",
-    summary: "O artigo aceito para publicação, liderado pelo professor Fernando Gomes, e suas alunas de doutorado do PENt Karine Velasco e Jaciara Santos, será publicado no Journal of Drug Delivery Science and Technology (Fator de Impacto: 4.5 | CiteScore: 8.0), referência mundial em tecnologia farmacêutica e biomateriais aplicados à saúde!.",
+    summary: "O artigo aceito para publicação, liderado pelo professor Fernando Gomes, e suas alunas de doutorado do PENt Karine Velasco e Jaciara Santos, será publicado no Journal of Drug Delivery Science and Technology, referência mundial em tecnologia farmacêutica e biomateriais aplicados à saúde!.",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8OMUumCqTFevycKm2k0AlaS-67a6TOy0JA&s?w=800&h=500&fit=crop", // clean room
   },
 ];
