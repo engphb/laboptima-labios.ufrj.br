@@ -3,7 +3,7 @@ import { ArrowRight, Microscope } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center pt-48 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -30,7 +30,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold text-white leading-[1.1] mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white leading-[1.1] mb-6"
           >
             Avançando as <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-cyan-200">Fronteiras</span> do Conhecimento
           </motion.h1>
