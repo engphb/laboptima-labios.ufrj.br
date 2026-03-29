@@ -1,4 +1,4 @@
-import { Beaker, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,9 +7,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
-                <Beaker className="w-6 h-6" />
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}images/logo-lab.png`}
+                alt="Logo LabOPTIMA | LaBioS"
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <span className="font-display font-bold text-2xl text-white tracking-tight block">
                   LaBioS <span className="text-white/40 font-light">|</span> LabOPTIMA
