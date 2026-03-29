@@ -117,8 +117,8 @@ export const services = [
   },
    {
   id: 6,
-  title: "Caracterização de Meios Porosos",
-  description: "Apoio técnico-científico para empresas no desenvolvimento de novos produtos e patentes.",
+  title: "Automação por Inteligência Artificial",
+  description: "Uso de técnicas de machine learning para automação e otimização de processos.",
   icon: Lightbulb,
   },
 ];
