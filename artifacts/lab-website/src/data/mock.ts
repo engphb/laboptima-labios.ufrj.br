@@ -240,6 +240,51 @@ export const team = [
   },
 ];
 
+export const projects = [
+  {
+    id: 1,
+    title: "Dessulfurização de Combustíveis por Nanopartículas Magnéticas",
+    titleEn: "Fuel Desulfurization by Magnetic Nanoparticles",
+    description: "Desenvolvimento de nanopartículas magnéticas funcionalizadas para remoção eficiente de compostos sulfurados em combustíveis fósseis, em parceria estratégica com a Repsol.",
+    descriptionEn: "Development of functionalized magnetic nanoparticles for efficient removal of sulfur compounds in fossil fuels, in strategic partnership with Repsol.",
+    partner: "Repsol",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Repsol_logo.svg/320px-Repsol_logo.svg.png",
+    status: "Em andamento",
+    statusEn: "Ongoing",
+    year: 2024,
+    type: "Parceria Industrial",
+    typeEn: "Industrial Partnership",
+  },
+  {
+    id: 2,
+    title: "Sistemas Poliméricos para Entrega Controlada de Fármacos",
+    titleEn: "Polymeric Systems for Controlled Drug Delivery",
+    description: "Desenvolvimento de nanocarreadores poliméricos para encapsulamento e liberação controlada de princípios ativos, com foco em doenças respiratórias e tratamento de tuberculose.",
+    descriptionEn: "Development of polymeric nanocarriers for encapsulation and controlled release of active ingredients, focusing on respiratory diseases and tuberculosis treatment.",
+    partner: "FAPERJ",
+    logo: null,
+    status: "Em andamento",
+    statusEn: "Ongoing",
+    year: 2024,
+    type: "Fomento Nacional",
+    typeEn: "National Grant",
+  },
+  {
+    id: 3,
+    title: "Inteligência Artificial Aplicada à Ciência de Materiais",
+    titleEn: "Artificial Intelligence Applied to Materials Science",
+    description: "Uso de técnicas de machine learning e redes neurais para predição de propriedades e otimização de processos em materiais avançados e nanomateriais.",
+    descriptionEn: "Use of machine learning techniques and neural networks to predict properties and optimize processes in advanced materials and nanomaterials.",
+    partner: "CNPq",
+    logo: null,
+    status: "Em andamento",
+    statusEn: "Ongoing",
+    year: 2023,
+    type: "Fomento Nacional",
+    typeEn: "National Grant",
+  },
+];
+
 export const infrastructureItems = [
   "Calorímetro Diferencial de Varredura (DSC)",
   "Espectrômetro de Fluorescência de Raios X por Energia Dispersiva (EDX)",
