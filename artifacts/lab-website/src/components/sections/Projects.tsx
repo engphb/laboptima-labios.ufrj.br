@@ -1,15 +1,21 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { projects } from "@/data/mock";
 import { Badge } from "@/components/ui/badge";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { CalendarDays, Building2 } from "lucide-react";
 
 export function Projects() {
   const { t, lang } = useLanguage();
 
   return (
-    <section id="projetos" className="py-20 bg-background">
+    <section id="projetos" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 text-primary border-primary">
             {t.projects.subtitle}
           </Badge>
@@ -21,80 +27,89 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="relative max-w-3xl mx-auto">
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-border" />
-
-          <div className="space-y-10">
-            {projects.map((project, index) => {
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-3">
+            {projects.map((project) => {
               const title = lang === "en" ? project.titleEn : project.title;
               const description = lang === "en" ? project.descriptionEn : project.description;
               const type = lang === "en" ? project.typeEn : project.type;
               const status = lang === "en" ? project.statusEn : project.status;
 
               return (
-                <div key={project.id} className="relative flex gap-8 group">
-                  <div className="relative flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center z-10 relative group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                      <span className="text-primary font-bold text-sm group-hover:text-white transition-colors">
-                        {String(project.year).slice(2)}
-                      </span>
-                    </div>
-                  </div>
+                <AccordionItem
+                  key={project.id}
+                  value={String(project.id)}
+                  className="bg-card border border-border rounded-xl px-5 shadow-sm data-[state=open]:border-primary/40 transition-colors"
+                >
+                  <AccordionTrigger className="hover:no-underline py-5 gap-4">
+                    <div className="flex items-center gap-4 text-left flex-1 min-w-0">
+                      {project.logo ? (
+                        <img
+                          src={project.logo}
+                          alt={`${project.partner} logo`}
+                          className="h-8 max-w-[80px] object-contain flex-shrink-0"
+                        />
+                      ) : (
+                        <div className="flex items-center gap-1.5 flex-shrink-0 text-muted-foreground">
+                          <Building2 className="w-4 h-4" />
+                          <span className="text-xs font-semibold text-foreground whitespace-nowrap">
+                            {project.partner}
+                          </span>
+                        </div>
+                      )}
 
-                  <div className="flex-1 pb-2">
-                    <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-md transition-shadow duration-300">
-                      <div className="flex flex-wrap items-center gap-3 mb-4">
-                        <Badge className="text-xs bg-primary/10 text-primary border-0">
+                      <div className="flex-1 min-w-0">
+                        <p className="font-semibold text-foreground text-sm leading-snug line-clamp-2">
+                          {title}
+                        </p>
+                      </div>
+
+                      <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
+                        <Badge className="text-xs bg-primary/10 text-primary border-0 whitespace-nowrap">
                           {type}
                         </Badge>
-                        <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                        <span className="flex items-center gap-1 text-xs text-muted-foreground whitespace-nowrap">
                           <CalendarDays className="w-3 h-3" />
                           {project.year}
                         </span>
-                        <span className="flex items-center gap-1.5 text-xs text-green-600 font-medium ml-auto">
-                          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-                          {status}
-                        </span>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        {project.logo ? (
-                          <div className="flex-shrink-0">
-                            <img
-                              src={project.logo}
-                              alt={`${project.partner} logo`}
-                              className="max-h-10 max-w-[100px] object-contain"
-                            />
-                          </div>
-                        ) : (
-                          <div className="flex-shrink-0 flex items-center gap-1.5 text-muted-foreground">
-                            <Building2 className="w-4 h-4" />
-                            <span className="text-xs font-semibold text-foreground">
-                              {project.partner}
-                            </span>
-                          </div>
-                        )}
-
-                        <div className="flex-1">
-                          <h3 className="font-bold text-foreground text-base mb-2 leading-snug">
-                            {title}
-                          </h3>
-                          <p className="text-muted-foreground text-sm leading-relaxed">
-                            {description}
-                          </p>
-                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </AccordionTrigger>
+
+                  <AccordionContent className="pb-5">
+                    <div className="flex sm:hidden items-center gap-2 mb-3">
+                      <Badge className="text-xs bg-primary/10 text-primary border-0">
+                        {type}
+                      </Badge>
+                      <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                        <CalendarDays className="w-3 h-3" />
+                        {project.year}
+                      </span>
+                    </div>
+
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                      {description}
+                    </p>
+
+                    <div className="flex items-center justify-between pt-3 border-t border-border">
+                      <span className="flex items-center gap-1.5 text-xs text-green-600 font-medium">
+                        <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+                        {status}
+                      </span>
+                      {!project.logo && (
+                        <span className="text-xs text-muted-foreground">
+                          {project.partner}
+                        </span>
+                      )}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               );
             })}
-          </div>
-
-          <div className="absolute left-4 bottom-0 w-4 h-4 rounded-full border-2 border-primary bg-background" />
+          </Accordion>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-10">
           <a
             href="#contato"
             className="inline-flex items-center gap-2 text-primary font-medium hover:underline underline-offset-4 transition"
