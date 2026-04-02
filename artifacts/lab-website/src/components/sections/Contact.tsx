@@ -26,17 +26,26 @@ export function Contact() {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: FormValues) => {
+  const onSubmit = (data: FormValues) => {
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form data:", data);
-    setIsSubmitting(false);
-    reset();
-    toast({
-      title: c.successTitle,
-      description: c.successDesc,
-      variant: "default",
-    });
+
+    const recipient = "fernando_gomes@ima.ufrj.br";
+    const subject = encodeURIComponent(`[Site LabOPTIMA/LaBioS] ${data.subject}`);
+    const body = encodeURIComponent(
+      `Nome: ${data.name}\nEmail: ${data.email}\n\nMensagem:\n${data.message}`
+    );
+
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+    setTimeout(() => {
+      setIsSubmitting(false);
+      reset();
+      toast({
+        title: c.successTitle,
+        description: c.successDesc,
+        variant: "default",
+      });
+    }, 800);
   };
 
   return (
