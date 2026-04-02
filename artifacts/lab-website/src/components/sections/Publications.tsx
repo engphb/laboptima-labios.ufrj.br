@@ -49,7 +49,7 @@ export function Publications() {
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-2">{pub.title}</h4>
                   <p className="text-slate-600 mb-3">{pub.authors}</p>
-                  {pub.doi && (
+                  {pub.doi ? (
                     <a
                       href={`https://doi.org/${pub.doi}`}
                       target="_blank"
@@ -60,6 +60,11 @@ export function Publications() {
                       <ExternalLink className="w-3.5 h-3.5" />
                       DOI: {pub.doi}
                     </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 text-xs text-slate-400">
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      DOI: —
+                    </span>
                   )}
                 </div>
               </div>
