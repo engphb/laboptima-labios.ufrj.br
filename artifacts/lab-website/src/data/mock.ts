@@ -107,7 +107,7 @@ export const services = [
     id: 4,
     title: "Máquina Universal de Ensaios Eletromecânicos",
     description: "Realização de testes mecânicos destrutivos e não destrutivos em diversos materiais. Avalia propriedades como resistência, elasticidade e durabilidade através de testes de tração, compressão, flexão e cisalhamento.",
-    icon: Zap,
+  imageUrl: "https://embracal.com/imagens/informacoes/maquina-universal-ensaios-emic-01.jpg",
   },
   {
     id: 5,
@@ -320,12 +320,12 @@ export const equipment = [
   },
   {
     id: 3,
-    name: "Máquina Universal de Ensaios Mecânicos",
-    nameEn: "Universal Mechanical Testing Machine",
+    name: "Máquina Universal de Ensaios Eletromecânicos",
+    nameEn: "Universal Electromechanical Testing Machine",
     acronym: "EMIC",
-    photo: null,
-    description: "Ensaios de tração, compressão e flexão para caracterização mecânica de materiais.",
-    descriptionEn: "Tensile, compression, and flexion tests for mechanical characterization of materials.",
+    photo: "images/emic.jpg",
+    description: "Realização de testes mecânicos destrutivos e não destrutivos em diversos materiais. Avalia propriedades como resistência, elasticidade e durabilidade através de testes de tração, compressão, flexão e cisalhamento.",
+    descriptionEn: "Performs destructive and non-destructive mechanical tests on various materials. Evaluates properties such as strength, elasticity, and durability through tensile, compression, flexion, and shear tests.",
   },
   {
     id: 4,
