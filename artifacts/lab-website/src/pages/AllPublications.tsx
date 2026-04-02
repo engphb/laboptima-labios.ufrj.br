@@ -63,7 +63,7 @@ export default function AllPublications() {
                     {pub.title}
                   </h2>
                   <p className="text-slate-500 text-sm leading-relaxed mb-3">{pub.authors}</p>
-                  {pub.doi && (
+                  {pub.doi ? (
                     <a
                       href={`https://doi.org/${pub.doi}`}
                       target="_blank"
@@ -73,6 +73,11 @@ export default function AllPublications() {
                       <ExternalLink className="w-3.5 h-3.5" />
                       DOI: {pub.doi}
                     </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 text-xs text-slate-400">
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      DOI: —
+                    </span>
                   )}
                 </div>
               </motion.div>
