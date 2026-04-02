@@ -33,7 +33,7 @@ export function Infrastructure() {
                 <div className="relative w-full aspect-[4/3] bg-slate-100 overflow-hidden">
                   {item.photo ? (
                     <img
-                      src={item.photo}
+                      src={`${import.meta.env.BASE_URL}${item.photo}`}
                       alt={name}
                       className="w-full h-full object-cover"
                     />
