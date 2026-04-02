@@ -2,7 +2,7 @@
 
 echo "Enviando alterações para o GitHub..."
 
-git push --force https://engphb:$GITHUB_PERSONAL_ACCESS_TOKEN@github.com/engphb/laboptima-labios-website.git HEAD:main
+git push --force https://engphb:$GITHUB_PERSONAL_ACCESS_TOKEN@github.com/engphb/laboptima-labios.ufrj.br.git HEAD:main
 
 if [ $? -eq 0 ]; then
   echo ""
