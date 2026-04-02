@@ -6,6 +6,7 @@ export const translations = {
   pt: {
     nav: [
       { name: "Pesquisa", href: "#pesquisa" },
+      { name: "Projetos", href: "#projetos" },
       { name: "Publicações", href: "#publicacoes" },
       { name: "Serviços", href: "#servicos" },
       { name: "Notícias", href: "#noticias" },
@@ -23,6 +24,13 @@ export const translations = {
         "Localizados na UFRJ, os nossos laboratórios são multidisciplinares e dedicados à investigação científica de ponta, integrando biotecnologia, nanomateriais e inteligência artificial para solucionar desafios da sociedade.",
       cta1: "Conheça Nossas Linhas",
       cta2: "Fale Conosco",
+    },
+    projects: {
+      subtitle: "Parcerias e Financiamento",
+      title: "Projetos de Pesquisa",
+      description: "Projetos desenvolvidos em colaboração com parceiros industriais e com apoio de agências de fomento nacionais.",
+      ongoing: "Em andamento",
+      contact: "Saiba mais ou colabore",
     },
     research: {
       subtitle: "Nossa Ciência",
@@ -139,6 +147,7 @@ export const translations = {
   en: {
     nav: [
       { name: "Research", href: "#pesquisa" },
+      { name: "Projects", href: "#projetos" },
       { name: "Publications", href: "#publicacoes" },
       { name: "Services", href: "#servicos" },
       { name: "News", href: "#noticias" },
@@ -156,6 +165,13 @@ export const translations = {
         "Located at UFRJ, our laboratories are multidisciplinary and dedicated to cutting-edge scientific research, integrating biotechnology, nanomaterials and artificial intelligence to solve societal challenges.",
       cta1: "Explore Our Research",
       cta2: "Contact Us",
+    },
+    projects: {
+      subtitle: "Partnerships & Funding",
+      title: "Research Projects",
+      description: "Projects developed in collaboration with industrial partners and supported by national funding agencies.",
+      ongoing: "Ongoing",
+      contact: "Learn more or collaborate",
     },
     research: {
       subtitle: "Our Science",
