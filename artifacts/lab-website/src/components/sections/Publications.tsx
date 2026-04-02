@@ -27,18 +27,17 @@ export function Publications() {
 
         <div className="space-y-4">
           {publications.map((pub, idx) => (
-            <motion.a
-              href={pub.link}
+            <motion.div
               key={pub.id}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group block bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
+              className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-primary/10 group-hover:text-primary transition-colors">
-                  <FileText className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
+                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0">
+                  <FileText className="w-5 h-5 text-slate-400" />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
@@ -48,16 +47,23 @@ export function Publications() {
                     <span className="text-primary font-bold">{pub.year}</span>
                     <span className="text-slate-400 text-sm">{pub.journal}</span>
                   </div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors">
-                    {pub.title}
-                  </h4>
-                  <p className="text-slate-600">{pub.authors}</p>
-                </div>
-                <div className="shrink-0 p-3 rounded-full bg-slate-50 text-slate-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 sm:opacity-0 group-hover:opacity-100 sm:-translate-x-4 group-hover:translate-x-0">
-                  <ExternalLink className="w-5 h-5" />
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">{pub.title}</h4>
+                  <p className="text-slate-600 mb-3">{pub.authors}</p>
+                  {pub.doi && (
+                    <a
+                      href={`https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-accent transition-colors"
+                      onClick={e => e.stopPropagation()}
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      DOI: {pub.doi}
+                    </a>
+                  )}
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>

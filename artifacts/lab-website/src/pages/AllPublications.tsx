@@ -40,16 +40,15 @@ export default function AllPublications() {
 
           <div className="space-y-4">
             {publications.map((pub, idx) => (
-              <motion.a
-                href={pub.link}
+              <motion.div
                 key={pub.id}
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.07 }}
-                className="group flex flex-col sm:flex-row gap-6 items-start sm:items-center bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
+                className="flex flex-col sm:flex-row gap-6 items-start sm:items-center bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-colors">
-                  <FileText className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" />
+                <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center shrink-0">
+                  <FileText className="w-5 h-5 text-slate-400" />
                 </div>
 
                 <div className="flex-1">
@@ -60,16 +59,23 @@ export default function AllPublications() {
                     <span className="text-primary font-bold">{pub.year}</span>
                     <span className="text-slate-400 text-sm">{pub.journal}</span>
                   </div>
-                  <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-primary transition-colors leading-snug">
+                  <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 leading-snug">
                     {pub.title}
                   </h2>
-                  <p className="text-slate-500 text-sm leading-relaxed">{pub.authors}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-3">{pub.authors}</p>
+                  {pub.doi && (
+                    <a
+                      href={`https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-accent transition-colors"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      DOI: {pub.doi}
+                    </a>
+                  )}
                 </div>
-
-                <div className="shrink-0 p-3 rounded-full bg-slate-50 text-slate-400 group-hover:bg-primary group-hover:text-white transition-all duration-300 sm:opacity-0 group-hover:opacity-100">
-                  <ExternalLink className="w-5 h-5" />
-                </div>
-              </motion.a>
+              </motion.div>
             ))}
           </div>
 
