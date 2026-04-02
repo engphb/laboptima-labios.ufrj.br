@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { researchLines } from "@/data/mock";
 
 const container = {
   hidden: { opacity: 0 },
@@ -12,7 +13,7 @@ const item = {
 };
 
 export function Research() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const r = t.research;
 
   return (
@@ -31,8 +32,10 @@ export function Research() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          {r.lines.map((line) => {
+          {researchLines.map((line) => {
             const Icon = line.icon;
+            const title = lang === "en" ? line.titleEn : line.title;
+            const description = lang === "en" ? line.descriptionEn : line.description;
             return (
               <motion.div
                 key={line.id}
@@ -46,8 +49,8 @@ export function Research() {
                   <div className="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     <Icon className="w-7 h-7" />
                   </div>
-                  <h4 className="text-2xl font-display font-bold text-slate-900 mb-4">{line.title}</h4>
-                  <p className="text-slate-600 leading-relaxed">{line.description}</p>
+                  <h4 className="text-2xl font-display font-bold text-slate-900 mb-4">{title}</h4>
+                  <p className="text-slate-600 leading-relaxed">{description}</p>
                 </div>
               </motion.div>
             );

@@ -15,34 +15,43 @@ export const researchLines = [
   {
     id: 1,
     title: "Nanomateriais Avançados",
+    titleEn: "Advanced Nanomaterials",
     description: "Desenvolvimento de novos materiais com propriedades modificadas.",
+    descriptionEn: "Development of new materials with modified properties.",
     icon: Atom,
   },
   {
     id: 2,
     title: "Recuperação Ambiental",
+    titleEn: "Environmental Recovery",
     description: "Descomissionamento de poços de petróleo, Remoção de contaminantes de meios aquosos (óleo, metais pesados, corantes orgânicos), Identificação de Microplásticos.",
+    descriptionEn: "Decommissioning of oil wells, removal of contaminants from aqueous media (oil, heavy metals, organic dyes), and microplastics identification.",
     icon: Leaf,
   },
   {
     id: 3,
     title: "Energias Renováveis e Sustentabilidade",
+    titleEn: "Renewable Energies and Sustainability",
     description: "Catálise heterogênea para produção de biodiesel, Síntese verde de nanopartículas metálicas, Dessulfurização de combustíveis, Purificação de Biocombustíveis, Hidrogênio Verde, Biofilmes para células fotovoltáicas.",
+    descriptionEn: "Heterogeneous catalysis for biodiesel production, green synthesis of metallic nanoparticles, fuel desulfurization, biofuel purification, green hydrogen, and biofilms for photovoltaic cells.",
     icon: Zap,
   },
   {
     id: 4,
     title: "Inteligência Artificial Aplicada",
+    titleEn: "Applied Artificial Intelligence",
     description: "Modelagem de redes neurais para predições e otimizações e análise de dados e big data.",
+    descriptionEn: "Neural network modeling for predictions and optimizations, data analysis and big data.",
     icon: Brain,
   },
-
-{
+  {
     id: 5,
-      title: "Encapsulamento de Fármacos",
-      description: "Desenvolvimento de sistemas poliméricos para encapsulamento de princípios ativos farmacêuticos.",
-      icon: Pill,
-      },
+    title: "Encapsulamento de Fármacos",
+    titleEn: "Drug Encapsulation",
+    description: "Desenvolvimento de sistemas poliméricos para encapsulamento de princípios ativos farmacêuticos.",
+    descriptionEn: "Development of polymeric systems for the encapsulation of active pharmaceutical ingredients.",
+    icon: Pill,
+  },
 ];
 
 export const publications = [
@@ -88,38 +97,50 @@ export const services = [
   {
     id: 1,
     title: "Análise por Microscopia Digital",
+    titleEn: "Digital Microscopy Analysis",
     description: "Caracterização morfológica e estrutural de amostras em escala com alta resolução.",
+    descriptionEn: "Morphological and structural characterization of samples at scale with high resolution.",
     icon: Microscope,
   },
   {
     id: 2,
     title: "Análise de EDX",
+    titleEn: "EDX Analysis",
     description: "Caracterização da composição elementar de amostras.",
+    descriptionEn: "Characterization of the elemental composition of samples.",
     icon: Database,
   },
   {
     id: 3,
     title: "Calorímetro Diferencial de Varredura (DSC)",
+    titleEn: "Differential Scanning Calorimeter (DSC)",
     description: "Medição de transições térmicas como fusão, cristalização e transições vítreas.",
-    imageUrl: "https://petroemphor.com/wp-content/uploads/2020/03/STA-6000.png",
+    descriptionEn: "Measurement of thermal transitions such as melting, crystallization and glass transitions.",
+    icon: Thermometer,
   },
   {
     id: 4,
     title: "Máquina Universal de Ensaios Eletromecânicos",
-    description: "Realização de testes mecânicos destrutivos e não destrutivos em diversos materiais. Avalia propriedades como resistência, elasticidade e durabilidade através de testes de tração, compressão, flexão e cisalhamento.",
-  imageUrl: "https://embracal.com/imagens/informacoes/maquina-universal-ensaios-emic-01.jpg",
+    titleEn: "Universal Electromechanical Testing Machine",
+    description: "Realização de testes mecânicos destrutivos e não destrutivos em diversos materiais.",
+    descriptionEn: "Performance of destructive and non-destructive mechanical tests on various materials.",
+    icon: Zap,
   },
   {
     id: 5,
     title: "Consultoria em Inovação",
+    titleEn: "Innovation Consulting",
     description: "Apoio técnico-científico para empresas no desenvolvimento de novos produtos e patentes.",
+    descriptionEn: "Technical-scientific support for companies in the development of new products and patents.",
     icon: Lightbulb,
   },
-   {
-  id: 6,
-  title: "Automação por Inteligência Artificial",
-  description: "Uso de técnicas de machine learning para automação e otimização de processos.",
-  icon: Lightbulb,
+  {
+    id: 6,
+    title: "Automação por Inteligência Artificial",
+    titleEn: "Artificial Intelligence Automation",
+    description: "Uso de técnicas de machine learning para automação e otimização de processos.",
+    descriptionEn: "Use of machine learning techniques for process automation and optimization.",
+    icon: Lightbulb,
   },
 ];
 

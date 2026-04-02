@@ -1,4 +1,3 @@
-import { Brain, Dna, Lightbulb, Microscope, Zap, Database, Atom, Thermometer, Pill, Leaf } from "lucide-react";
 
 export type Lang = "pt" | "en";
 
@@ -38,13 +37,6 @@ export const translations = {
       description:
         "Focamos em abordagens multidisciplinares para investigar problemas complexos na fronteira do conhecimento científico.",
       learnMore: "Saiba mais sobre projetos em andamento",
-      lines: [
-        { id: 1, title: "Nanomateriais Avançados", description: "Desenvolvimento de novos materiais com propriedades modificadas.", icon: Atom },
-        { id: 2, title: "Recuperação Ambiental", description: "Descomissionamento de poços de petróleo, Remoção de contaminantes de meios aquosos (óleo, metais pesados, corantes orgânicos), Identificação de Microplásticos.", icon: Leaf },
-        { id: 3, title: "Energias Renováveis e Sustentabilidade", description: "Catálise heterogênea para produção de biodiesel, Síntese verde de nanopartículas metálicas, Dessulfurização de combustíveis, Purificação de Biocombustíveis, Hidrogênio Verde, Biofilmes para células fotovoltáicas.", icon: Zap },
-        { id: 4, title: "Inteligência Artificial Aplicada", description: "Modelagem de redes neurais para predições e otimizações e análise de dados e big data.", icon: Brain },
-        { id: 5, title: "Encapsulamento de Fármacos", description: "Desenvolvimento de sistemas poliméricos para encapsulamento de princípios ativos farmacêuticos.", icon: Pill },
-      ],
     },
     publications: {
       subtitle: "Produção Científica",
@@ -57,14 +49,6 @@ export const translations = {
       subtitle: "Parcerias e Extensão",
       title: "Serviços Oferecidos",
       description: "Colocamos nossa infraestrutura e expertise à disposição da comunidade acadêmica e do setor produtivo.",
-      items: [
-        { id: 1, title: "Análise por Microscopia Digital", description: "Caracterização morfológica e estrutural de amostras em escala com alta resolução.", icon: Microscope },
-        { id: 2, title: "Análise de EDX", description: "Caracterização da composição elementar de amostras.", icon: Database },
-        { id: 3, title: "Calorímetro Diferencial de Varredura (DSC)", description: "Medição de transições térmicas como fusão, cristalização e transições vítreas.", icon: Thermometer },
-        { id: 4, title: "Máquina Universal de Ensaios Eletromecânicos", description: "Realização de testes mecânicos destrutivos e não destrutivos em diversos materiais. Avalia propriedades como resistência, elasticidade e durabilidade através de testes de tração, compressão, flexão e cisalhamento.", icon: Zap },
-        { id: 5, title: "Consultoria em Inovação", description: "Apoio técnico-científico para empresas no desenvolvimento de novos produtos e patentes.", icon: Lightbulb },
-        { id: 6, title: "Automação por Inteligência Artificial", description: "Uso de técnicas de machine learning para automação e otimização de processos.", icon: Lightbulb },
-      ],
     },
     news: {
       subtitle: "Atualizações",
@@ -179,13 +163,6 @@ export const translations = {
       description:
         "We focus on multidisciplinary approaches to investigate complex problems at the frontier of scientific knowledge.",
       learnMore: "Learn more about ongoing projects",
-      lines: [
-        { id: 1, title: "Advanced Nanomaterials", description: "Development of new materials with quantum properties and applications in superconductivity and next-generation computing.", icon: Atom },
-        { id: 2, title: "Environmental Recovery", description: "Decommissioning of oil wells, removal of contaminants from aqueous media (oil, heavy metals, organic dyes), and microplastics identification.", icon: Leaf },
-        { id: 3, title: "Renewable Energies and Sustainability", description: "Heterogeneous catalysis for biodiesel production, green synthesis of metallic nanoparticles, fuel desulfurization, biofuel purification, green hydrogen, and biofilms for photovoltaic cells.", icon: Zap },
-        { id: 4, title: "Applied Artificial Intelligence", description: "Neural network modeling for predictions and optimizations, data analysis and big data.", icon: Brain },
-        { id: 5, title: "Drug Encapsulation", description: "Development of polymeric systems for the encapsulation of active pharmaceutical ingredients.", icon: Pill },
-      ],
     },
     publications: {
       subtitle: "Scientific Output",
@@ -198,14 +175,6 @@ export const translations = {
       subtitle: "Partnerships & Extension",
       title: "Services Offered",
       description: "We make our infrastructure and expertise available to the academic community and the productive sector.",
-      items: [
-        { id: 1, title: "Digital Microscopy Analysis", description: "Morphological and structural characterization of samples at scale with high resolution.", icon: Microscope },
-        { id: 2, title: "EDX Analysis", description: "Characterization of the elemental composition of samples.", icon: Database },
-        { id: 3, title: "Differential Scanning Calorimeter (DSC)", description: "Measurement of thermal transitions such as melting, crystallization and glass transitions.", icon: Thermometer },
-        { id: 4, title: "Universal Electromechanical Testing Machine", description: "Performance of destructive and non-destructive mechanical tests on various materials. Evaluates properties such as strength, elasticity and durability through tensile, compression, bending and shear tests.", icon: Zap },
-        { id: 5, title: "Innovation Consulting", description: "Technical-scientific support for companies in the development of new products and patents.", icon: Lightbulb },
-        { id: 6, title: "Artificial Intelligence Automation", description: "Use of machine learning techniques for process automation and optimization.", icon: Lightbulb },
-      ],
     },
     news: {
       subtitle: "Updates",

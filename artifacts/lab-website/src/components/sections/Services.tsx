@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { services } from "@/data/mock";
 
 export function Services() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const s = t.services;
 
   return (
@@ -18,8 +19,10 @@ export function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {s.items.map((service, idx) => {
+          {services.map((service, idx) => {
             const Icon = service.icon;
+            const title = lang === "en" ? service.titleEn : service.title;
+            const description = lang === "en" ? service.descriptionEn : service.description;
             return (
               <motion.div
                 key={service.id}
@@ -32,8 +35,8 @@ export function Services() {
                 <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
                   <Icon className="w-7 h-7 text-accent" />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-4">{service.title}</h4>
-                <p className="text-slate-400 mb-8">{service.description}</p>
+                <h4 className="text-xl font-bold text-white mb-4">{title}</h4>
+                <p className="text-slate-400 mb-8">{description}</p>
               </motion.div>
             );
           })}
