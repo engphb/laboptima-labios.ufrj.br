@@ -73,14 +73,14 @@ export function Footer() {
                     className="h-16 object-contain opacity-80"
                   />
                   <img
-                    src={`${import.meta.env.BASE_URL}images/ima.jpg`}
+                    src={`${import.meta.env.BASE_URL}images/ima.png`}
                     alt="IMA - Instituto de Macromoléculas"
-                    className="h-16 object-contain rounded-lg opacity-90"
+                    className="h-16 object-contain opacity-90"
                   />
                   <img
-                    src={`${import.meta.env.BASE_URL}images/pent.jpg`}
+                    src={`${import.meta.env.BASE_URL}images/pent.png`}
                     alt="PENt - Programa de Engenharia da Nanotecnologia COPPE/UFRJ"
-                    className="h-16 object-contain rounded-lg opacity-90"
+                    className="h-16 object-contain opacity-90"
                   />
                 </div>
               </li>
